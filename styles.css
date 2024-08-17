@@ -59,16 +59,71 @@ body {
 }
 
 .form-header {
-    padding: 30px;
+    padding-left: 50px;
+}
+
+.form-legend {
+    background: white;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .the-form {
     background: white;
-    padding-left: 30px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-bottom: 20px;
+    justify-content: left;
 }
 
 .the-form-continued {
-    padding-left: 30px;
+    padding: 25px 0 0px 50px;
+}
+
+.the-form-continued a:link, .the-form-continued a:visited {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.the-form .input-box {
+    width: calc(100%/2 - 120px);
+}
+
+.the-form .input-box input {
+    height: 30px;
+    width: 60%;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.the-form .input-box input:focus {
+    border: none;
+    border: 3px solid blue;
+    box-shadow: 0 2px 2px gray;
+}
+
+.the-form .input-box #pwd:invalid, .the-form .input-box #confirm-pwd:invalid {
+    border: 1px solid red;
+}
+
+label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+button {
+    font-size: 16px;
+    background: #596D48;
+    color: white;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 25px;
 }
 
 @media screen and (max-width: 700px) {

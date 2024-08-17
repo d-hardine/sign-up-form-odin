@@ -24,35 +24,38 @@
                 like this in your life to help you realize your deepest dreams.<br> Sign up <em>now</em> to get started. <br> <br>
                 You <i>know</i> you want to.</h2>
         </div>
+        
         <form action="" method="get">
+            <legend><h2 class="form-legend">Let's do this! <br></h2></legend>
             <div class="the-form">
-                <legend><h2>Let's do this!</h2></legend>
-                <div class="first-name">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name" required>
+                <div class="input-box">
+                    <label for="first-name">FIRST NAME <br></label>
+                    <input type="text" id="first-name" name="first-name" required maxlength="21">
                 </div>
-                <div class="last-name">
-                    <label for="last-name">LAST NAME:</label>
-                    <input type="text" id="last-name" name="last-name" required>
+                <div class="input-box">
+                    <label for="last-name">LAST NAME <br></label>
+                    <input type="text" id="last-name" name="last-name" required maxlength="21">
                 </div>
-                <div class="user-mail">
-                    <label for="mail">EMAIL</label>
+                <div class="input-box">
+                    <label for="mail">EMAIL <br></label>
                     <input type="email" id="mail" name="user-mail" required>
                 </div>
-                <div class="phone">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number" required>
+                <div class="input-box">
+                    <label for="phone-number">PHONE NUMBER <br></label>
+                    <input type="tel" id="phone-number" name="phone-number" required maxlength="16">
                 </div>
-                <div class="pwd">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="pwd" name="pwd" required>
+                <div class="input-box">
+                    <label for="pwd">PASSWORD<br></label>
+                    <input type="password" id="pwd" name="pwd" required minlength="8" maxlength="25">
                 </div>
-                <div class='confirm-pwd'>CONFIRM PASSWORD</div>
-                <input type="password" id="confirm-pwd" name="confirm-pwd" required>
+                <div class="input-box">
+                    <label for="confirm-pwd">CONFIRM PASSWORD<br></label>
+                    <input type="password" id="confirm-pwd" name="confirm-pwd" required minlength="8" maxlength="25">
+                </div>
             </div>
             <div class="the-form-continued">
                 <button>Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+                <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </form>
     </main>
