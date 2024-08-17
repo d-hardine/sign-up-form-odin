@@ -9,13 +9,14 @@
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*placeholder*/
+    color: #3a3a3a;
+    font-family: Roboto, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*placeholder*/
     text-align: center;
     display: flex;
     height: 100vh;
 }
 
-.sidebar {
+.left {
     background-image: url(img/sidebar-background-resized.jpg);
     color: #ffffff;
     display: flex;
@@ -34,9 +35,40 @@ body {
     margin-top: 120px;
 }
 
+.credit {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.left a:link {
+    color: white;
+}
+
+.left a:visited {
+    color: gray;
+}
+
 .form-main {
-    background: #ffffff;
+    background: rgb(242, 242, 242);
     flex: 3 3 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 30px;
+}
+
+.form-header {
+    padding: 30px;
+}
+
+.the-form {
+    background: white;
+    padding-left: 30px;
+}
+
+.the-form-continued {
+    padding-left: 30px;
 }
 
 @media screen and (max-width: 700px) {
