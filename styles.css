@@ -1,0 +1,51 @@
+@font-face {
+    font-family: odin-font;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /*placeholder*/
+    text-align: center;
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-image: url(img/sidebar-background-resized.jpg);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    flex: 1.5 1 100px;
+}
+
+.logo {
+    font-family: odin-font;
+    font-size: 102px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.form-main {
+    background: #ffffff;
+    flex: 3 3 200px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        flex-direction: column;
+        
+    }
+
+    .logo {
+        margin-top: 20px;
+    }
+}
